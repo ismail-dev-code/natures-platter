@@ -28,13 +28,13 @@
         theme: {
           extend: {
             backgroundImage: {
-              bigCat:
-                "linear-gradient(180.00deg, rgba(255, 249, 244, 0.331),rgba(17, 17, 17, 0.367) 100%), url('./assets/big-catt.png')",
+              bigAloo:
+                "linear-gradient(360.00deg, rgba(12, 160, 88, 0.11),rgba(22, 207, 56, 0.1) 100%), url('./assets/potato.jpg')",
             },
             keyframes: {
               dimlight: {
                 "0%, 18%, 20%, 50.1%, 60%, 65.1%, 80%, 90.1%, 92%": {
-                  color: "#0e3742",
+                  color: "#a7f910e4",
                   boxShadow: "none",
                 },
                 "18.1%, 20.1%, 30%, 50%, 60.1%, 65%, 80.1%, 90%, 92.1%, 100%": {
@@ -66,7 +66,6 @@
               dimlight: "dimlight 5s infinite",
             },
             colors: {
-              clifford: "#da373d",
               accent: "#179800",
               secondary: "rgb(255, 249, 244)",
               dark2: "rgb(17, 17, 17)",
@@ -109,7 +108,7 @@
   </head>
   <body>
     <!-- header section  -->
-    <header class="bg-secondary px-4">
+    <header class="bg-secondary md:pt-6 pt-4 px-4">
       <nav class="flex max-w-[1320px] mx-auto justify-between items-center">
         <div class="flex items-center gap-3">
           <img class="cursor-pointer" src="./assets/logo-header.png" alt="" />
@@ -156,7 +155,7 @@
             Login
           </button>
           <button
-            class="px-7 py-2.5 text-xl text-white font-sora bg-accent rounded-lg hover:bg-primaryHover hover:scale-105"
+            class="px-7 py-2.5 text-xl text-white font-sora bg-accent rounded-lg hover:bg-cardColor hover:scale-105"
           >
             Register
           </button>
@@ -260,7 +259,7 @@
           </div>
         </div>
       </section>
-      <!-- popular products section  -->
+      <!-- 30% off section  -->
        <section class="md:max-w-[1320px] my-14 md:my-32 mx-auto px-4">
          <!-- all cards parent  -->
          <div class="flex md:flex-row flex-col gap-6 relative">
@@ -271,7 +270,7 @@
             <h1
               class="md:text-3xl text-xl text-black font-adlam leading-10 font-normal mt-8 md:mt-12"
             >
-              30% off
+              30% OFF
             </h1>
             <p
               class="text-gray-700 w-[280px] md:w-full text-base md:text-xl mt-3 md:mt-5"
@@ -554,6 +553,48 @@
           </div>
         </div>
        </section>
+       <!-- 10% off section  -->
+       <section
+        class="md:max-w-[1320px] bg-bigAloo bg-cover bg-no-repeat rounded-2xl mx-4 md:mx-auto md:mt-32 mt-14 md:mb-36 mb-10 bg-secondary"
+      >
+        <div class="flex flex-col md:py-32 py-9 text-center justify-center">
+          <h1
+            class="md:text-5xl text-2xl leading-6 md:leading-tight md:pb-7 pb-6 animate-dimlight box-reflect"
+          >
+            Get
+            <span
+              class="md:text-6xl text-3xl text-accent font-semibold font-adlam"
+              >10% Off</span
+            >
+            on <br />
+            first Purchase
+          </h1>
+          <div class="flex flex-col items-center">
+            <input
+              class="text-center w-4/5 md:w-3/6 items-center md:py-4 md:mb-3 mb-1.5 md:mt-0 mt-1.5 rounded-lg py-1.5 text-base md:text-xl"
+              type="email"
+              placeholder="Enter Your Email"
+            />
+            <input
+              class="text-center w-4/5 md:w-3/6 py-1.5 text-base items-center md:py-4 md:mb-3 mb-1.5 rounded-lg md:text-xl"
+              type="password"
+              placeholder="Create Password"
+            />
+            <input
+              class="text-center w-4/5 md:w-3/6 py-1.5 text-base items-center md:py-4 md:mb-5 mb-3 rounded-lg md:text-xl"
+              type="password"
+              placeholder="Repeat Password"
+            />
+          </div>
+          <div>
+            <button
+              class="md:px-7 px-3 md:py-2.5 py-1.5 text-base md:text-xl bg-accent rounded-lg hover:bg-white hover:scale-105 hover:text-accent"
+            >
+              Resister Now
+            </button>
+          </div>
+        </div>
+      </section>
     </main>
     <footer></footer>
   </body>
