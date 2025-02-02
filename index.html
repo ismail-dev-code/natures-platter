@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>nature's planet</title>
+    <!-- font awesome cdn -->
+    <script
+      src="https://kit.fontawesome.com/1632af40cc.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- google fonts cdn  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Sora:wght@100..800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- tailwind and daisyui cdn  -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            backgroundImage: {
+              bigCat:
+                "linear-gradient(180.00deg, rgba(255, 249, 244, 0.331),rgba(17, 17, 17, 0.367) 100%), url('./assets/big-catt.png')",
+            },
+            keyframes: {
+              dimlight: {
+                "0%, 18%, 20%, 50.1%, 60%, 65.1%, 80%, 90.1%, 92%": {
+                  color: "#0e3742",
+                  boxShadow: "none",
+                },
+                "18.1%, 20.1%, 30%, 50%, 60.1%, 65%, 80.1%, 90%, 92.1%, 100%": {
+                  color: "#8c8e8f",
+                  textShadow: "0 0 10px #03bcf4",
+                },
+              },
+              typing: {
+                "0%": {
+                  width: "0%",
+                  visibility: "hidden",
+                },
+                "100%": {
+                  width: "100%",
+                },
+              },
+              blink: {
+                "50%": {
+                  borderColor: "transparent",
+                },
+                "100%": {
+                  borderColor: "white",
+                },
+              },
+            },
+            animation: {
+              typing:
+                "typing 4s steps(20) infinite alternate, blink .7s infinite",
+              dimlight: "dimlight 5s infinite",
+            },
+            colors: {
+              clifford: "#da373d",
+              accent: "#179800",
+              secondary: "rgb(255, 249, 244)",
+              dark2: "rgb(17, 17, 17)",
+              primaryHover: "rgba(255, 219, 38, 0.807)",
+              cardColor: "rgb(249, 223, 138)",
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        font-size: 16px;
+        font-family: "Sora", serif;
+        box-sizing: border-box;
+      }
+      .custom-linear {
+        background: linear-gradient(
+          134.71deg,
+          rgb(248, 204, 251) 1.286%,
+          rgb(172, 210, 253) 100%
+        );
+      }
+      .custom-linear2 {
+        background: linear-gradient(
+          134.71deg,
+          rgb(255, 249, 244) 1.511%,
+          rgb(249, 223, 138) 100%
+        );
+      }
+      .font-adlam {
+        font-family: "ADLaM Display", serif;
+      }
+      .font-sora {
+        font-family: "Sora", serif;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- header section  -->
+    <header class="bg-secondary px-4">
+      <nav class="flex max-w-[1320px] mx-auto justify-between items-center">
+        <div class="flex items-center gap-3">
+          <img class="cursor-pointer" src="./assets/logo-header.png" alt="" />
+        </div>
+        <div class="hidden lg:flex">
+          <ul class="flex gap-8 items-center text-dark2 text-xl leading-6">
+            <li>
+              <a
+                class="text-xl leading-6 hover:underline hover:cursor-pointer hover:text-black"
+                >Products</a
+              >
+            </li>
+            <li>
+              <a
+                class="text-xl leading-6 hover:underline hover:cursor-pointer hover:text-black"
+                >Services</a
+              >
+            </li>
+            <li>
+              <a
+                class="text-xl leading-6 hover:underline hover:cursor-pointer hover:text-black"
+                >Contact us</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="block md:hidden">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+        <div class="hidden md:flex gap-4">
+          <button>
+            <i
+              class="fa-solid hover:scale-105 cursor-pointer fa-magnifying-glass text-2xl"
+            ></i>
+          </button>
+          <button>
+            <i
+              class="fa-solid hover:scale-105 cursor-pointer fa-cart-shopping"
+            ></i>
+          </button>
+          <button
+            class="px-7 py-2.5 text-xl font-sora border border-accent rounded-lg hover:bg-[#ffdb2616] hover:scale-105"
+          >
+            Login
+          </button>
+          <button
+            class="px-7 py-2.5 text-xl text-white font-sora bg-accent rounded-lg hover:bg-primaryHover hover:scale-105"
+          >
+            Register
+          </button>
+        </div>
+      </nav>
+      <!-- banner section -->
+      <section class="md:max-w-[1320px] mx-auto px-4">
+        <!-- text content  -->
+        <div class="md:w-full flex flex-col items-center">
+          <h1
+            class="text-dark2 text-center font-adlam text-3xl leading-10 md:text-[56px] md:leading-[73px] md:pt-[100px] pt-8 pb-3 md:pb-4 animate-typing overflow-hidden whitespace-nowrap"
+          >
+            Freshness
+            <span
+              class="animate-typing overflow-hidden whitespace-nowrap font-adlam text-3xl leading-10 md:text-[56px] md:leading-[73px] text-accent"
+              >You Can <br />
+              Count</span
+            >
+            On, Prices You’ll Love!
+          </h1>
+          <p
+            class="md:text-xl text-center leading-5 text-dark2 md:leading-9 pb-3 md:pb-6 pr-2 md:pr-0"
+          >
+            Shop your daily essentials at unbeatable prices. From fresh produce
+            to pantry <br />
+            staples, we’ve got you covered every day!
+          </p>
+        </div>
+        <!-- image content  -->
+        <div class="flex justify-end">
+          <img class="w-full" src="assets/hero-vegetables.png" alt="" />
+        </div>
+      </section>
+    </header>
+    <main>
+      <section class="md:max-w-[1320px] my-14 md:my-32 mx-auto px-4">
+        <h1
+          class="font-adlam md:text-4xl text-accent text-[24px] leading-[29px] md:leading-[47px] pb-3 md:pb-5 md:mb-12 mb-8"
+        >
+          Services
+        </h1>
+        <!-- cards  -->
+        <div class="flex md:flex-row flex-col md:gap-6 gap-5">
+          <!-- card 1 -->
+          <div
+            class="flex flex-col md:p-8 p-[26px] md:pb-11 pb-[37px] justify-center bg-secondary rounded-2xl flex-1 items-center text-center"
+          >
+            <div class="bg-white rounded-full">
+              <img class="md:p-6 p-[21px]" src="./assets/service.png" alt="" />
+            </div>
+            <div>
+              <h1
+                class="md:text-2xl md:leading-[32px] md:mt-6 mt-5 md:mb-3 mb-2.5 font-semibold text-xl"
+              >
+                24/7 Services
+              </h1>
+              <p class="md:text-xl md:leading-[25px] font-light">
+                Whenever, wherever. We’ll bring food to you. You need it. We
+                deliver it.
+              </p>
+            </div>
+          </div>
+          <!-- card 2 -->
+          <div
+            class="flex flex-col md:p-8 p-[26px] md:pb-11 pb-[37px] justify-center bg-secondary rounded-2xl flex-1 items-center text-center"
+          >
+            <div class="bg-white rounded-full">
+              <img class="md:p-6 p-[21px]" src="./assets/delivery.png" alt="" />
+            </div>
+            <div>
+              <h1
+                class="md:text-2xl md:leading-[32px] md:mt-6 mt-5 md:mb-3 mb-2.5 font-semibold text-xl"
+              >
+                Fast Delivery
+              </h1>
+              <p class="md:text-xl md:leading-[25px] font-light">
+                We deliver within 30 miles of Noakhali city. Ready to deliver at
+                any time of the day or night.
+              </p>
+            </div>
+          </div>
+          <!-- card 3 -->
+          <div
+            class="flex flex-col md:p-8 p-[26px] md:pb-11 pb-[37px] justify-center bg-secondary rounded-2xl flex-1 items-center text-center"
+          >
+            <div class="bg-white rounded-full">
+              <img class="md:p-6 p-[21px]" src="./assets/healthy.png" alt="" />
+            </div>
+            <div>
+              <h1
+                class="md:text-2xl md:leading-[32px] md:mt-6 mt-5 md:mb-3 mb-2.5 font-semibold text-xl"
+              >
+                Healthy Products
+              </h1>
+              <p class="md:text-xl md:leading-[25px] font-light">
+                Feeding your body, feeding your soul. Taste the goodness, feel
+                the difference.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer></footer>
+  </body>
+</html>
