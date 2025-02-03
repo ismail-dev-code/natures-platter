@@ -68,7 +68,7 @@
             colors: {
               accent: "#179800",
               secondary: "rgb(255, 249, 244)",
-              dark2: "rgb(17, 17, 17)",
+              bgGreen: "#115414",
               primaryHover: "rgba(255, 219, 38, 0.807)",
               cardColor: "#53db3a",
             },
@@ -260,9 +260,14 @@
         </div>
       </section>
       <!-- 30% off section  -->
-       <section class="md:max-w-[1320px] my-14 md:my-32 mx-auto px-4">
-         <!-- all cards parent  -->
-         <div class="flex md:flex-row flex-col gap-6 relative">
+      <section class="md:max-w-[1320px] my-14 md:my-32 mx-auto px-4">
+        <h1
+          class="md:text-4xl text-2xl text-accent md:leading-[47px] text-left font-adlam text-dark2 mb-8 md:mb-12"
+        >
+          Popular Products
+        </h1>
+        <!-- all cards parent  -->
+        <div class="flex md:flex-row flex-col gap-6 relative">
           <!-- left card  -->
           <div
             class="bg-cardColor md:pb-0 pb-32 w-full md:w-[420px] rounded-[10px] md:pl-8 pl-4"
@@ -275,16 +280,15 @@
             <p
               class="text-gray-700 w-[280px] md:w-full text-base md:text-xl mt-3 md:mt-5"
             >
-            Vegetables are the soul's food, the poet's inspiration, and the chef's canvas.
+              Vegetables are the soul's food, the poet's inspiration, and the
+              chef's canvas.
             </p>
             <button
               class="bg-white md:text-xl text-base md:leading-6 leading-5 py-2.5 px-7 text-dark2 hover:bg-gray-100 rounded-lg cursor-pointer md:mt-8 mt-5 hover:scale-105"
             >
               Buy Now
             </button>
-            <div
-              class="absolute md:top-44 md:left-48 top-[130px] left-[220px]"
-            >
+            <div class="absolute md:top-44 md:left-48 top-[130px] left-[220px]">
               <img
                 class="md:w-40 md:h-52 w-32 relative md:bottom-[-21px] h-48"
                 src="./assets/vegetable-offer.png"
@@ -295,9 +299,7 @@
           <!-- left card end  -->
 
           <!--right cards parent-->
-          <div
-            class="grid md:grid-cols-3 md:gap-[23px] gap-[14px] grid-cols-2"
-          >
+          <div class="grid md:grid-cols-3 md:gap-[23px] gap-[14px] grid-cols-2">
             <!-- card 1  -->
             <div
               class="flex items-center border border-[rgba(17, 17, 17, 0.1)] bg-white rounded-[10px] w-full md:w-[275px] md:gap-4 gap-2.5 md:py-4 py-2.5 md:pl-4 pl-2.5 hover:scale-105 cursor-pointer"
@@ -345,7 +347,7 @@
                 <h1
                   class="md:text-base text-dark2 font-medium text-nowrap text-[20px] leading-4 md:leading-6 mb-1.5"
                 >
-                Eggplant
+                  Eggplant
                 </h1>
                 <h3
                   class="md:leading-5 leading-[13px] md:taxt-base text-[10px]"
@@ -373,7 +375,7 @@
                 <h1
                   class="md:text-base text-dark2 font-medium text-nowrap text-[20px] leading-4 md:leading-6 mb-1.5"
                 >
-                Tomato g 
+                  Tomato g
                 </h1>
                 <h3
                   class="md:leading-5 leading-[13px] md:taxt-base text-[10px]"
@@ -429,7 +431,7 @@
                 <h1
                   class="md:text-base text-dark2 font-medium text-nowrap text-[20px] leading-4 md:leading-6 mb-1.5"
                 >
-                 Noa Aloo
+                  Noa Aloo
                 </h1>
                 <h3
                   class="md:leading-5 leading-[13px] md:taxt-base text-[10px]"
@@ -485,7 +487,7 @@
                 <h1
                   class="md:text-base text-dark2 font-medium text-nowrap text-[20px] leading-4 md:leading-6 mb-1.5"
                 >
-                Onion KG
+                  Onion KG
                 </h1>
                 <h3
                   class="md:leading-5 leading-[13px] md:taxt-base text-[10px]"
@@ -552,9 +554,9 @@
             </div>
           </div>
         </div>
-       </section>
-       <!-- 10% off section  -->
-       <section
+      </section>
+      <!-- 10% off section  -->
+      <section
         class="md:max-w-[1320px] bg-bigAloo bg-cover bg-no-repeat rounded-2xl mx-4 md:mx-auto md:mt-32 mt-14 md:mb-36 mb-10 bg-secondary"
       >
         <div class="flex flex-col md:py-32 py-9 text-center justify-center">
@@ -592,6 +594,65 @@
             >
               Resister Now
             </button>
+          </div>
+        </div>
+      </section>
+      <!-- arrival and offer section  -->
+      <section
+        class="md:max-w-[1320px] md:px-0 px-4 mb-14 md:mb-32 mx-auto md:mt-32 mt-10 text-accent"
+      >
+        <h1
+          class="md:text-4xl text-2xl md:leading-[47px] text-left font-adlam text-dark2 mb-6 md:mb-12"
+        >
+          Arrival & Offers
+        </h1>
+        <!-- cards  -->
+        <div class="flex md:flex-row flex-col gap-6">
+          <!-- card left  -->
+          <div class="bg-bgGreen flex-1 rounded-xl flex">
+            <div class="md:pl-[27px] pt-9 pb-0 pl-8">
+              <img src="./assets/dawat-logo.png" alt="" />
+              <h1
+                class="md:text-[23px] font-adlam bg-accent rounded-lg text-nowrap md:mb-2 text-[14px] text-white md:mt-11 mt-[17px] text-center mb-0.5"
+              >
+                Cook Exotic Dishes
+              </h1>
+              <h2
+                class="text-white text-nowrap md:mt-6 mt-4 md:text-4xl text-2xl font-adlam mb-4"
+              >
+                UP to 20% OFF
+              </h2>
+            </div>
+            <div class="md:w-[330px] w-full flex justify-center items-center">
+              <img
+                class="w-full md:pt-8"
+                src="./assets/dawat-mock-up.png"
+                alt=""
+              />
+            </div>
+          </div>
+          <!-- card right  -->
+          <div class="flex-1 bg-[#102861] rounded-xl flex">
+            <div class="md:pl-[27px] pl-[18px]">
+              <img src="./assets/india-gate-logo.png" alt="" />
+              <h1
+                class="md:text-[23px] font-adlam bg-[#2A4D97] rounded-lg text-nowrap md:mb-2 text-[14px] text-white md:mt-11 mt-[17px] text-center mb-0.5"
+              >
+                World’s No.1 Rice
+              </h1>
+              <h2
+                class="text-white text-nowrap md:mt-6 mt-4 md:text-4xl text-2xl font-adlam mb-4"
+              >
+                UP to 40% OFF
+              </h2>
+            </div>
+            <div class="md:w-[330px] w-full flex justify-center items-center">
+              <img
+                class="md:w-[175px] h-[159px]"
+                src="./assets/india-gate-mock-up.png"
+                alt=""
+              />
+            </div>
           </div>
         </div>
       </section>
